@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style-form.css">
+    <title>Cadastro Cliente</title>
+</head>
+
+<body>
+    <div class="container_form">
+
+        <form class="form" action="#" method="post">
+
+            <div class="form_grupo">
+                <label for="nome" class="form_label">Nome do médico</label>
+                <input type="text" name="nome" class="form_input" id="nome" placeholder="Nome" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="crm" class="form_label">CRM</label>
+                <input type="text" name="CRM" class="form_input" id="email" placeholder="CRM-00000" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="datanascimento" class="form_label">Data de Nascimento do médico</label>
+                <input type="date" name="datanascimento" class="form_input" id="datanascimento"
+                    placeholder="Data de Nascimento" required>
+            </div>
+
+            <div class="form_grupo">
+
+                <label for="estadocivil" class="text">Área do médico</label>
+                <select name="estadocivil" class="dropdown" required>
+
+                    <option selected disabled class="form_select_option" value="">Selecione</option>
+                    <option value="Acupuntura" class="form_select_option">Acupuntura</option>
+                    <option value="Alergia" class="form_select_option">Alergia e Imunologia</option>
+                    <option value="Anestesiologia" class="form_select_option">Anestesiologia</option>
+                    <option value="Angiologia" class="form_select_option">Angiologia</option>
+                    <option value="Cardiologia" class="form_select_option">Cardiologia</option>
+                    <option value="Ortopedista" class="form_select_option">Ortopedista</option>
+                </select>
+
+            </div>
+
+            <div class="form_grupo">
+
+                <div class="submit">
+
+                    <input type="hidden" name="acao" value="enviar">
+                    <button type="submit" name="Submit" class="submit_btn">Cadastrar</button>
+
+                </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
